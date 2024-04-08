@@ -17,7 +17,8 @@ function buttonValue(value) {
         if (button === "=") {
             try {
                 let y = eval(screen.textContent)
-                screen.textContent = y
+                // console.log(typeof y)
+                screen.textContent =Math.round(y * 10000) / 10000
             }
             catch {
                 alert("qeyd etdiyiniz misalda xeta var")
